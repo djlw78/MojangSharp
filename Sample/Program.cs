@@ -126,7 +126,7 @@ namespace Sample
             WriteColoredLine(ConsoleColor.Yellow, "Change skin?");
             if (Console.ReadKey().Key == ConsoleKey.Y)
             {
-                Response skin = new UploadSkin(auth.AccessToken, auth.SelectedProfile.Value, new FileInfo(@"C:\Users\Enzo.INNOCENZI\Downloads\download.png"), false).PerformRequest().Result;
+                Response skin = new UploadSkin(auth.AccessToken, auth.SelectedProfile.Value, new FileInfo(@"C:\Users\<hey>\Downloads\download.png"), false).PerformRequest().Result;
                 if (skin.IsSuccess)
                     WriteColoredLine(ConsoleColor.DarkGreen, "Changed skin!");
                 else
